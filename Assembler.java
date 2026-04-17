@@ -223,10 +223,10 @@ public class Assembler {
     }
 
     public static void main(String[] args) throws IOException {
-        String normasm = "C:/Users/GS Adithya Krishna/Documents/java programmes/Assmebler/src/Asmcode.asm.txt";
-        String nowhspace = "C:/Users/GS Adithya Krishna/Documents/java programmes/Assmebler/src/whtrem.asm.txt";
-        String output = "C:/Users/GS Adithya Krishna/Documents/java programmes/Assmebler/src/bincode.asm.txt";
-        String symbol="C:/Users/GS Adithya Krishna/Documents/java programmes/Assmebler/src/SymbolTable.txt.txt";
+        String normasm = "path to assembly code txt file";
+        String nowhspace = "path to whitespace removal file ";
+        String output = "path to the binary code txt file (output)";
+        String symbol="path to symbol table file ";
 
         try (BufferedReader ip = new BufferedReader(new FileReader(normasm));
              BufferedWriter np = new BufferedWriter(new FileWriter(nowhspace))) {
